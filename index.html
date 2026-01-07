@@ -1,0 +1,41 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Graha Kita – Donasi Al-Qur’an & Kegiatan Sosial</title>
+    <meta name="description" content="Bantu sebarkan Al-Qur’an dan salurkan bantuan kemanusiaan bersama Graha Kita. Donasi mudah, transparan, berdampak nyata." />
+    <link rel="canonical" href="https://www.grahakita.id/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Graha Kita – Donasi Al-Qur’an & Kegiatan Sosial" />
+    <meta property="og:title" content="Graha Kita – Donasi Al-Qur’an & Kegiatan Sosial" />
+    <meta property="og:description" content="Bantu sebarkan Al-Qur’an dan salurkan bantuan kemanusiaan bersama Graha Kita. Donasi mudah, transparan, berdampak nyata." />
+    <meta property="og:url" content="https://www.grahakita.id/" />
+    <meta property="og:image" content="/og-default.jpg" />
+    <meta property="og:locale" content="id_ID" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- PWA / Icons -->
+    <meta name="theme-color" content="#0ea5e9" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" href="/icons/icon-192.png" />
+
+    <!-- Percepat koneksi Supabase -->
+    <link rel="preconnect" href="%VITE_SUPABASE_URL%" crossorigin />
+    <link rel="dns-prefetch" href="%VITE_SUPABASE_URL%" />
+
+    <!-- Midtrans Snap SANDBOX -->
+    <script src="https://app.sandbox.midtrans.com/snap/snap.js" data-client-key="%VITE_MIDTRANS_CLIENT_KEY%"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

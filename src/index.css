@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { scroll-behavior: smooth; }
+
+/* Helper: container konsisten */
+@layer utilities {
+  .container-app { @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8; }
+  .btn { @apply inline-flex items-center justify-center rounded-xl px-5 py-2.5 font-medium shadow-sm transition; }
+  .btn-primary { @apply btn bg-brand-primary text-white hover:opacity-90; }
+  .btn-secondary { @apply btn bg-gray-900 text-white hover:bg-gray-800; }
+  .card { @apply rounded-2xl bg-white shadow-md overflow-hidden; }
+}

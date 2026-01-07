@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .container-app { @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8; }
+  .btn           { @apply inline-flex items-center justify-center rounded-xl px-5 py-2.5 font-medium shadow-sm transition; }
+  .btn-primary   { @apply btn bg-primary text-white hover:opacity-90; }
+  .btn-accent    {
+   @apply btn rounded-full text-gray-900 shadow-lg hover:shadow-xl active:scale-[.98]
+          ring-1 ring-black/5 focus-visible:outline-none focus-visible:ring-2;
+   background-color: theme('colors.accent.bright');            /* 👉 lebih terang */
+   box-shadow: 0 10px 24px rgba(0,0,0,.12);                    /* sedikit lebih “hidup” */
+ }
+  .btn-secondary { @apply btn bg-gray-900 text-white hover:bg-gray-800; }
+  .card        { @apply rounded-2xl bg-white shadow-md overflow-hidden; }
+  .card-float  { @apply shadow-xl ring-1 ring-black/5; }
+  .shadow-soft   { box-shadow: 0 10px 30px rgba(0,0,0,.08); }
+  .lift        { @apply transform-gpu hover:-translate-y-0.5; }
+  .lift { transition: transform .15s ease, box-shadow .15s ease; }
+  .lift:hover { transform: translateY(-2px); }
+}
+
+:root { scroll-behavior: smooth; }
+
+/* contoh util sederhana */
+.container-app { @apply mx-auto max-w-7xl px-4; }
+.btn { @apply rounded-xl border px-3 py-2; }
+.btn-primary { @apply rounded-xl bg-slate-900 px-4 py-2 text-white; }
