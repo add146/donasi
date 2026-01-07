@@ -230,15 +230,15 @@ export default function CampaignsAdmin() {
               onClick={() => saveToggle(!enabled)}
               disabled={savingToggle}
               className={[
-                "relative h-6 w-11 rounded-full transition-colors",
+                "relative inline-flex h-6 w-11 shrink-0 cursor-pointer rounded-full transition-colors",
                 enabled ? "bg-slate-900" : "bg-slate-300",
               ].join(" ")}
               title="Show/Hide section di beranda"
             >
               <span
                 className={[
-                  "absolute top-1 h-4 w-4 rounded-full bg-white shadow transition-transform",
-                  enabled ? "translate-x-6" : "translate-x-1",
+                  "pointer-events-none inline-block h-5 w-5 translate-y-0.5 transform rounded-full bg-white shadow ring-0 transition-transform",
+                  enabled ? "translate-x-5" : "translate-x-0.5",
                 ].join(" ")}
               />
             </button>
@@ -311,8 +311,8 @@ export default function CampaignsAdmin() {
                       r.status === "published"
                         ? "bg-emerald-100 text-emerald-700"
                         : r.status === "draft"
-                        ? "bg-slate-100 text-slate-700"
-                        : "bg-amber-100 text-amber-700",
+                          ? "bg-slate-100 text-slate-700"
+                          : "bg-amber-100 text-amber-700",
                     ].join(" ")}
                   >
                     {r.status}
@@ -729,8 +729,8 @@ function CampaignForm({
                 status === "published"
                   ? "bg-emerald-100 text-emerald-700"
                   : status === "draft"
-                  ? "bg-slate-100 text-slate-700"
-                  : "bg-amber-100 text-amber-700",
+                    ? "bg-slate-100 text-slate-700"
+                    : "bg-amber-100 text-amber-700",
               ].join(" ")}
             >
               {status}

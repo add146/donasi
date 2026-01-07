@@ -1,0 +1,18 @@
+# ===========================================
+# GRAHA KITA - ENVIRONMENT CONFIGURATION
+# Supabase Project: ixjechujsfqirldapwan
+# ===========================================
+
+# Supabase Configuration (NEW PROJECT)
+VITE_SUPABASE_URL=https://ixjechujsfqirldapwan.supabase.co
+VITE_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Iml4amVjaHVqc2ZxaXJsZGFwd2FuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Njc3NzI0OTgsImV4cCI6MjA4MzM0ODQ5OH0.pjTCpv5P3_bY1gXDvsBlSI6YP9roIDn31K1FWcSkPsE
+
+# Midtrans Configuration (Sandbox)
+# Dapatkan dari https://dashboard.sandbox.midtrans.com/settings/config_info
+VITE_MIDTRANS_CLIENT_KEY=SB-Mid-client-xxxxxxxxxxxxxxx
+
+# ===========================================
+# CARA PAKAI:
+# 1. Rename file ini menjadi .env.local
+# 2. Isi VITE_MIDTRANS_CLIENT_KEY dengan Client Key dari Midtrans
+# ===========================================
